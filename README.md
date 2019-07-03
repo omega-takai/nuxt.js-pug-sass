@@ -16,7 +16,7 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://ja.nuxtjs.org/).
 
 ## Config of create nuxt-app
 
