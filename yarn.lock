@@ -2906,6 +2906,11 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+destyle.css@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/destyle.css/-/destyle.css-1.0.5.tgz#9b66eb043d2288558bb46b6a698b75eab24c2d3a"
+  integrity sha512-LzpZrwBAmCHMITVQpxZdHlgmDgQRAa8zRiY/6qIA/p7s8uGvotULtNj/Yrq06tt5O7Yhy/vMuu7l3Ov0vGQy/w==
+
 detect-indent@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
