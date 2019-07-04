@@ -3,10 +3,10 @@
 
 // screen size
 $screens: (
-  extraLarge: 1366px,
-  large: 992px,
-  medium: 768px,
-  small: 576px,
+  "extraLarge": 1366px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
 );
 @function screens($key) {
   @return map-get($screens, $key)
@@ -14,9 +14,9 @@ $screens: (
 
 // color
 $colors: (
-  font: rgba(#333, 1),
-  fontTurned: rgba(#fff, 1),
-  footer: rgba(#000, 0.82),
+  "font": rgba(#333, 1),
+  "fontTurned": rgba(#fff, 1),
+  "footer": rgba(#000, 0.82),
 );
 @function colors($key) {
   @return map-get($colors, $key)
@@ -24,8 +24,8 @@ $colors: (
 
 // fonts
 $fonts: (
-  family: "'Noto Sans JP', sans-serif",
-  color: colors(font),
+  "family": #{'Noto Sans JP', sans-serif},
+  "color": colors(font),
 );
 @function fonts($key) {
   @return map-get($fonts, $key)

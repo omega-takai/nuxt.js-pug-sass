@@ -1,0 +1,10 @@
+// scope    = global
+// fileName = main.scss
+
+  @import _chunk
+
+html
+  font-family: fonts('family')
+  font-size: 10px
+  @include gmq-responsive(null)
+    background-color: colors('font')

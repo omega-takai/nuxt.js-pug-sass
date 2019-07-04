@@ -4,9 +4,9 @@
 
 // How to Use - - - - - - - - - - - - - - - - - - - -
 // .className {
-//   @include gmq-responsive() { for Tablet and Desktop }
+//   @include gmq-responsive(null) { for Tablet and Desktop }
 
-//   @include gmq-responsive(sp) { only mobile }
+//   @include gmq-responsive() { only mobile }
 //   @include gmq-responsive(sp, port) { only mobile(portrait) }
 //   @include gmq-responsive(sp, land) { only mobile(landscape) }
 
@@ -36,7 +36,7 @@
   // for Mobile, SmartPhone
   @if $device == sp {
     @media only screen
-      and (max-width: $screen-medium - 1px) {
+      and (max-width: screens('medium') - 1px) {
       @include gmq-orientation($orient) {
         @content;
       }
@@ -45,8 +45,8 @@
 
   @else if $device == tablet {
     @media only screen
-      and (min-width: $screen-medium)
-      and (max-width: $screen-extraLarge - 1px) {
+      and (min-width: screens('medium'))
+      and (max-width: screens('extraLarge') - 1px) {
       @include gmq-orientation($orient) {
         @content;
       }
@@ -55,7 +55,7 @@
 
   @else if $device == pc {
     @media all
-      and (min-width: $screen-extraLarge) {
+      and (min-width: screens('extraLarge')) {
       @include gmq-orientation($orient) {
         @content;
       }
@@ -65,7 +65,7 @@
   // not Mobile, for Tablet and Desktop
   @else {
     @media all
-      and (min-width: $screen-medium) {
+      and (min-width: screens('medium')) {
       @include gmq-orientation($orient) {
         @content;
       }

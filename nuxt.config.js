@@ -30,7 +30,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/sass/main.sass'],
+  css: ['@/assets/style/main.sass'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -47,7 +47,7 @@ export default {
     // Can't cross import
     // Fail:    SCSS ==import==> Sass
     // Success: Sass ==import==> Sass
-    sass: ['./assets/sass/_chunk.sass']
+    sass: ['./assets/style/_chunk.sass']
   },
   /*
    ** Build configuration
