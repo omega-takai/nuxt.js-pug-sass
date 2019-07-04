@@ -30,7 +30,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/style/main.scss'],
+  css: ['@/assets/sass/main.sass'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -44,8 +44,10 @@ export default {
     // Do not import actual styles.
     // Use this module only to import variables, mixins,
     // functions (et cetera) as they won't exist in the actual build.
-    // scss: ['./assets/style/_variables.scss']
-    // sass: ['./assets/style/_variables.sass']
+    // Can't cross import
+    // Fail:    SCSS ==import==> Sass
+    // Success: Sass ==import==> Sass
+    sass: ['./assets/sass/_chunk.sass']
   },
   /*
    ** Build configuration
