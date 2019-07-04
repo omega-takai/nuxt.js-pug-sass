@@ -3,11 +3,6 @@
 </template>
 
 <style>
-html {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 10px;
-}
-
 *,
 *:before,
 *:after {
