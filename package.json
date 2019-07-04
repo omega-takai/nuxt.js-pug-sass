@@ -16,6 +16,11 @@
     "pregenerate": "yarn install && yarn clean",
     "generate": "nuxt generate"
   },
+  "browserslist": [
+    "defaults",
+    "not < 1%",
+    "IE 11"
+  ],
   "dependencies": {
     "@nuxtjs/style-resources": "^0.1.2",
     "destyle.css": "^1.0.5",

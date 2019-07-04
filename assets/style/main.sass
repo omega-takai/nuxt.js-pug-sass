@@ -11,5 +11,30 @@
 html
   font-family: fonts('family')
   font-size: 10px
-  @include gmq-responsive(null)
+  @include gmq-responsive(sp)
     background-color: colors('font')
+
+.links
+  padding-top: 15px
+  p
+    width: 100%
+    font-size: 1.6rem
+
+@mixin button($color: #3b8070)
+  display: inline-block
+  margin: .5rem 1rem
+  border-radius: .4rem
+  border: 1px solid $color
+  color: $color
+  text-decoration: none
+  padding: 1rem 3rem
+  font-size: 1.6rem
+  &:hover
+    color: #fff
+    background-color: $color
+
+.button--green
+  @include button
+
+.button--grey
+  @include button(#35495e)
