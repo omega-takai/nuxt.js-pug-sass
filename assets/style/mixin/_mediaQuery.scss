@@ -1,0 +1,74 @@
+// Global
+// Mixin: Media Query
+// Prefix: gmq
+
+// How to Use - - - - - - - - - - - - - - - - - - - -
+// .className {
+//   @include gmq-responsive() { for Tablet and Desktop }
+
+//   @include gmq-responsive(sp) { only mobile }
+//   @include gmq-responsive(sp, port) { only mobile(portrait) }
+//   @include gmq-responsive(sp, land) { only mobile(landscape) }
+
+//   @include gmq-responsive(tablet) { only Tablet }
+//   @include gmq-responsive(tablet, port) { only Tablet(portrait) }
+//   @include gmq-responsive(tablet, land) { only Tablet(landscape) }
+
+//   @include gmq-responsive(pc) { only Desktop }
+// }
+
+// mixin - - - - - - - - - - - - - - - - - - - - -
+@mixin gmq-orientation($orientation: land) {
+  @if $orientation == port {
+    @media (orientation: portrait) { @content; }
+  }
+
+  @else if $orientation == land {
+    @media (orientation: landscape) { @content; }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+@mixin gmq-responsive($device: sp, $orient: null) {
+  // for Mobile, SmartPhone
+  @if $device == sp {
+    @media only screen
+      and (max-width: $screen-medium - 1px) {
+      @include gmq-orientation($orient) {
+        @content;
+      }
+    }
+  }
+
+  @else if $device == tablet {
+    @media only screen
+      and (min-width: $screen-medium)
+      and (max-width: $screen-extraLarge - 1px) {
+      @include gmq-orientation($orient) {
+        @content;
+      }
+    }
+  }
+
+  @else if $device == pc {
+    @media all
+      and (min-width: $screen-extraLarge) {
+      @include gmq-orientation($orient) {
+        @content;
+      }
+    }
+  }
+
+  // not Mobile, for Tablet and Desktop
+  @else {
+    @media all
+      and (min-width: $screen-medium) {
+      @include gmq-orientation($orient) {
+        @content;
+      }
+    }
+  }
+}

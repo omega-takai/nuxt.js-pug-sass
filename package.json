@@ -17,6 +17,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^0.1.2",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

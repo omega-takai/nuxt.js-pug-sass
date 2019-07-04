@@ -38,7 +38,15 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/eslint-module'],
+  styleResources: {
+    // Important notice:
+    // Do not import actual styles.
+    // Use this module only to import variables, mixins,
+    // functions (et cetera) as they won't exist in the actual build.
+    // scss: ['./assets/style/_variables.scss']
+    // sass: ['./assets/style/_variables.sass']
+  },
   /*
    ** Build configuration
    */
