@@ -22,7 +22,7 @@
     "IE 11"
   ],
   "dependencies": {
-    "@nuxtjs/style-resources": "0.1.2",
+    "@nuxtjs/style-resources": "1.0.0",
     "destyle.css": "1.0.10",
     "nuxt": "2.9.2"
   },
