@@ -51,6 +51,9 @@ export default {
     // Success: Sass ==import==> Sass
     sass: ['./assets/style/_chunk.sass']
   },
+  server: {
+    port: 8000 // デフォルト: 3000
+  },
   /*
    ** Build configuration
    */
