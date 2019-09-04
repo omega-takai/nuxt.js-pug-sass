@@ -1,5 +1,5 @@
 {
-  "name": "nuxt.js-v2.8-pug-sass",
+  "name": "nuxt.js-pug-sass",
   "version": "1.0.0",
   "description": "my play ground",
   "author": "Tomonari Takai",
@@ -23,7 +23,6 @@
   ],
   "dependencies": {
     "@nuxtjs/style-resources": "1.0.0",
-    "destyle.css": "1.0.10",
     "nuxt": "2.9.2"
   },
   "devDependencies": {
