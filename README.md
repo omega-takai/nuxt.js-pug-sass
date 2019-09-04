@@ -1,4 +1,4 @@
-# nuxt.js-v2.8-pug-sass
+# nuxt.js-pug-sass
 
 > my play ground
 

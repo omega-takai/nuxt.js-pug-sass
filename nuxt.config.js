@@ -20,6 +20,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/destyle.css@1.0.10/destyle.min.css'
+      },
+      {
+        rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese'
       }
@@ -54,6 +58,13 @@ export default {
   server: {
     port: 8000 // デフォルト: 3000
   },
+  // buildDir: 'nuxt-dist',
+  router: {
+    base: '/nuxt.js-pug-sass/'
+  },
+  generate: {
+    dir: 'docs'
+  },
   /*
    ** Build configuration
    */
@@ -61,7 +72,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    // extend(config, ctx) {},
     postcss: {
       plugins: {},
       preset: {
