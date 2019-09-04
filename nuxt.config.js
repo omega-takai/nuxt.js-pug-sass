@@ -58,6 +58,13 @@ export default {
   server: {
     port: 8000 // デフォルト: 3000
   },
+  // buildDir: 'nuxt-dist',
+  router: {
+    base: '/nuxt.js-pug-sass/'
+  },
+  generate: {
+    dir: 'docs'
+  },
   /*
    ** Build configuration
    */
