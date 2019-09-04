@@ -13,7 +13,7 @@ div.wrapper
   footer.footer
     .links
       p This Project Links
-      a.button--grey(href="https://github.com/t--takai/nuxt.js-v2.8-pug-sass" target="_blank")
+      a.button--grey(href="https://github.com/t--takai/nuxt.js-pug-sass" target="_blank")
         | GitHub
 </template>
 

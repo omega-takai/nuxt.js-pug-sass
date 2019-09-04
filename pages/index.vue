@@ -2,7 +2,7 @@
   section.container
     div
       logo
-      h1.title nuxt.js-v2.8-pug-sass
+      h1.title nuxt.js-pug-sass
       h2.subtitle my play ground
 </template>
 
