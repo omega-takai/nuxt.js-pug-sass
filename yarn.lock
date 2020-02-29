@@ -3422,12 +3422,14 @@ eslint-plugin-unicorn@^13.0.0:
     safe-regex "^2.1.1"
     semver "^6.3.0"
 
-eslint-plugin-vue@6.0.1, eslint-plugin-vue@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-6.0.1.tgz#166d3eb24cf290f3ff24d44fe9fca496f3924fc2"
-  integrity sha512-5tgFPcxGDKjfVB/6Yi56bKiWxygUibfZmzSh26Np3kuwAk/lfaGbVld+Yt+MPgD84ppvcachtiL4/winsXLjXA==
+eslint-plugin-vue@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-6.2.1.tgz#ca802df5c33146aed1e56bb21d250c1abb6120a3"
+  integrity sha512-MiIDOotoWseIfLIfGeDzF6sDvHkVvGd2JgkvjyHtN3q4RoxdAXrAMuI3SXTOKatljgacKwpNAYShmcKZa4yZzw==
   dependencies:
-    vue-eslint-parser "^6.0.5"
+    natural-compare "^1.4.0"
+    semver "^5.6.0"
+    vue-eslint-parser "^7.0.0"
 
 eslint-plugin-vue@^5.2.2:
   version "5.2.3"
@@ -3435,6 +3437,13 @@ eslint-plugin-vue@^5.2.2:
   integrity sha512-mGwMqbbJf0+VvpGR5Lllq0PMxvTdrZ/ZPjmhkacrCHbubJeJOt+T6E3HUzAifa2Mxi7RSdJfC9HFpOeSYVMMIw==
   dependencies:
     vue-eslint-parser "^5.0.0"
+
+eslint-plugin-vue@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-6.0.1.tgz#166d3eb24cf290f3ff24d44fe9fca496f3924fc2"
+  integrity sha512-5tgFPcxGDKjfVB/6Yi56bKiWxygUibfZmzSh26Np3kuwAk/lfaGbVld+Yt+MPgD84ppvcachtiL4/winsXLjXA==
+  dependencies:
+    vue-eslint-parser "^6.0.5"
 
 eslint-scope@^4.0.0, eslint-scope@^4.0.3:
   version "4.0.3"
@@ -9166,6 +9175,18 @@ vue-eslint-parser@^6.0.5:
     espree "^5.0.0"
     esquery "^1.0.1"
     lodash "^4.17.11"
+
+vue-eslint-parser@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.0.0.tgz#a4ed2669f87179dedd06afdd8736acbb3a3864d6"
+  integrity sha512-yR0dLxsTT7JfD2YQo9BhnQ6bUTLsZouuzt9SKRP7XNaZJV459gvlsJo4vT2nhZ/2dH9j3c53bIx9dnqU2prM9g==
+  dependencies:
+    debug "^4.1.1"
+    eslint-scope "^5.0.0"
+    eslint-visitor-keys "^1.1.0"
+    espree "^6.1.2"
+    esquery "^1.0.1"
+    lodash "^4.17.15"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
